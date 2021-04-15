@@ -1,0 +1,27 @@
+[
+    {
+        "name":"product 1",
+        "description":"This is test description",
+        "price":1000
+    },
+    {
+        "name":"product 2",
+        "description":"This is test description",
+        "price":2000
+    },
+    {
+        "name":"product 3",
+        "description":"This is test description",
+        "price":3000
+    },
+    {
+        "name":"product 4",
+        "description":"This is test description",
+        "price":4000
+    },
+    {
+        "name":"product 5",
+        "description":"This is test description",
+        "price":5000
+    }
+]
