@@ -155,7 +155,32 @@ const AdminPage = () => {
                     </>
 
                     :
-                    null
+                    <div class={classes["data-card"]}>
+                            <div class="card-body">
+                                {showInputCard ?
+                                    <>
+                                        <p class={classes['new-input-p']}>
+                                            <input className={classes['new-input']} type="text" id="name" placeholder="Product name" onChange={e => inputChangeHandler(e)} />
+                                        </p>
+                                        <p class={classes['new-input-p']}>
+                                            <input className={classes['new-input']} type="text" id="description" placeholder="Product description" onChange={e => inputChangeHandler(e)} />
+                                        </p>
+                                        <p class={classes['new-input-p']}>
+                                            <input className={classes['new-input']} type="number" id="price" placeholder="Product price" onChange={e => inputChangeHandler(e)} />
+                                        </p>
+                                        <p class={classes['new-input-p']}>
+                                            <input className={classes['new-input']} placeholder="Quantity" id="quantity" onChange={e => inputChangeHandler(e)} />
+                                        </p>
+                                        <button style={{ marginTop: '2%' }} className="btn btn-success" onClick={e => submitHandler(e)}>Submit</button>
+                                    </>
+                                    :
+                                    <div onClick={e => setshowInputCard(true)} class={classes["circle"]}></div>
+                                }
+
+
+
+                            </div>
+                        </div>
                 }
 
             </div>
