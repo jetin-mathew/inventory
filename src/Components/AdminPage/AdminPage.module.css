@@ -1,3 +1,148 @@
 .container{
-    margin:2%
+    margin: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    /* height:93vh */
 }
+.data-card{
+    border: solid 1px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 5px rgb(240, 236, 236);
+    width:25%;
+    margin:2%;
+    height:25vh
+}
+.edit-input{
+    width:80%
+}
+.edit-input-name{
+    width:80%;
+    margin-left: 9%;
+}
+.new-input{
+    width:100%
+}
+.new-input-p{
+  margin: 0%;
+}
+.circle {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    position: relative;
+    margin-left: 32%;
+    margin-top: 9%;
+    cursor:pointer
+  }
+  .circle::after {
+    content: " ";
+    position: absolute;
+    display: block;
+    background-color: #fff;
+    height: 10px;
+    margin-top: -5px;
+    top: 50%;
+    left: 5px;
+    right: 5px;
+    z-index: 9;
+  }
+  .circle::before {
+    content: " ";
+    position: absolute;
+    display: block;
+    background-color: #fff;
+    width: 10px;
+    margin-left: -5px;
+    left: 50%;
+    top: 5px;
+    bottom: 5px;
+    z-index: 9;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .container{
+        margin: 2%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .data-card{
+        border: solid 1px;
+        border-radius: 20px;
+        box-shadow: 2px 2px 2px 2px lightgrey;
+        width:95%;
+        margin:2%;
+        height:30vh
+    }
+    .circle {
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        background-color: grey;
+        position: relative;
+        margin-left: 35%;
+        margin-top: 12%;
+        cursor:pointer
+      }
+      .circle::after {
+        content: " ";
+        position: absolute;
+        display: block;
+        background-color: #fff;
+        height: 10px;
+        margin-top: -5px;
+        top: 50%;
+        left: 5px;
+        right: 5px;
+        z-index: 9;
+      }
+      .circle::before {
+        content: " ";
+        position: absolute;
+        display: block;
+        background-color: #fff;
+        width: 10px;
+        margin-left: -5px;
+        left: 50%;
+        top: 5px;
+        bottom: 5px;
+        z-index: 9;
+      } 
+  }
+  @media only screen and (max-width: 1395px) {
+    .circle {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      background-color: grey;
+      position: relative;
+      margin-left: 28%;
+      margin-top: 9%;
+      cursor:pointer
+    }
+    .circle::after {
+      content: " ";
+      position: absolute;
+      display: block;
+      background-color: #fff;
+      height: 10px;
+      margin-top: -5px;
+      top: 50%;
+      left: 5px;
+      right: 5px;
+      z-index: 9;
+    }
+    .circle::before {
+      content: " ";
+      position: absolute;
+      display: block;
+      background-color: #fff;
+      width: 10px;
+      margin-left: -5px;
+      left: 50%;
+      top: 5px;
+      bottom: 5px;
+      z-index: 9;
+    }
+  }
